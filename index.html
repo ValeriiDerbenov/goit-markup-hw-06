@@ -20,48 +20,14 @@
     />
   </head>
   <body>
-    <header class="page-header">
-      <div class="header-logo">
-        <a href="./index.html" class="header-logo-text link"
-        >Web<span class="header-logo-studio">Studio</span></a
-      >
-      </div>
-      <div class="hamburger-container">
-        <nav class="header-nav">
-          <ul class="menu">
-            <li>
-              <a class="nav-menu-studio link current" href="./index.html"
-                >Studio</a
-              >
-            </li>
-            <li>
-              <a class="nav-menu-studio link" href="./portfolio.html"
-                >Portfolio</a
-              >
-            </li>
-            <li><a class="nav-menu-studio link" href="">Contacts</a></li>
-          </ul>
-          </ul>
-        </nav>
-          <address class="header-address">
-            <ul class="header-address-list list">
-              <li>
-                <a
-                  href="mailto:info@devstudio.com"
-                  class="header-address-list-item link"
-                  >info@devstudio.com</a
-                >
-              </li>
-              <li>
-                <a 
-                href="tel:+110001111111" 
-                class="header-address-list-item link"
-                  >+11 (000) 111-11-11</a
-                >
-              </li>
-            </ul>          
-          </address>
-          <button
+    <header class="page-header">      
+      <div class="hamburger-container  container">
+        <div class="header-logo">
+          <a href="./index.html" class="header-logo-text link"
+          >Web<span class="header-logo-studio">Studio</span></a
+        >
+        </div>
+        <button
           class="menu-toggle js-open-menu"
           aria-expanded="false"
           aria-controls="mobile-menu"
@@ -80,231 +46,232 @@
             ></path>
           </svg>
         </button>
+        <nav class="header-nav">
+          <ul class="menu">
+            <li>
+              <a class="nav-menu-studio link current" href="./index.html"
+                >Studio</a
+              >
+            </li>
+            <li>
+              <a class="nav-menu-studio link" href="./portfolio.html"
+                >Portfolio</a
+              >
+            </li>
+            <li><a class="nav-menu-studio link" href="">Contacts</a></li>
+          </ul>
+          </ul>
+        </nav>
+        <address class="header-contacts">
+            <ul class="header-contacts-list list">
+              <li class="header-contacts__item">
+                <a
+                  href="mailto:info@devstudio.com"
+                  class="header-contacts-list-item link"
+                  >info@devstudio.com</a
+                >
+              </li>
+              <li class="header-contacts__item">
+                <a 
+                href="tel:+110001111111" 
+                class="header-contacts-list-item link"
+                  >+11 (000) 111-11-11</a
+                >
+              </li>
+            </ul>          
+        </address>          
+      </div>
+      <div class="dropbox">
+        <div class="menu-container js-menu-container" id="mobile-menu">
+          <button class="menu-toggle js-close-menu">
+            <svg
+              fill="currentColor"
+              viewBox="0 0 20 20"        
+              width="8"
+              height="8"
+            >
+            <use href="./images/icons.svg#icon-close-black"></use>
+            <use href="./images/icons.svg#icon-Ellips"></use>
+            </svg>
+          </button>
+    
+          <ul class="mobile-menu">
+            <li>
+              <a class="nav-menu-studio-mobile link" href="./index.html"
+                >Studio</a
+              >
+            </li>
+            <li>
+              <a class="nav-menu-studio-mobile link" href="./portfolio.html"
+                >Portfolio</a
+              >
+            </li>
+            <li><a class="nav-menu-studio-mobile link" href="">Contacts</a></li>
+          </ul>
+          <address class="address-menu">
+            <ul class="address-menu-list list">
+              <li>
+                <a
+                  href="mailto:info@devstudio.com"
+                  class="address-menu-list-item link"
+                  >info@devstudio.com</a
+                >
+              </li>
+              <li>
+                <a href="tel:+110001111111" class="address-menu-list-item link"
+                  >+11 (000) 111-11-11</a
+                >
+              </li>
+            </ul>
+          </address>
+          <ul class="social-links">
+            <li class="social-links-item">
+              <a
+                href="https://www.instagram.com/"
+                target="_blank"
+                class="social-links-btn-mobile link"
+              >
+                <svg class="icon" width="24" height="24">
+                  <use href="./images/icons.svg#icon-instagram"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social-links-item">
+              <a
+                href="https://www.twitter.com/"
+                target="_blank"
+                class="social-links-btn-mobile link"
+              >
+                <svg class="icon" width="24" height="24">
+                  <use href="./images/icons.svg#icon-twitter"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social-links-item">
+              <a
+                href="https://www.facebook.com/"
+                target="_blank"
+                class="social-links-btn-mobile link"
+              >
+                <svg class="icon" width="24" height="24">
+                  <use href="./images/icons.svg#icon-facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social-links-item">
+              <a
+                href="https://www.linkedin.com/"
+                target="_blank"
+                class="social-links-btn-mobile link"
+              >
+                <svg class="icon" width="24" height="24">
+                  <use href="./images/icons.svg#icon-linkedin"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
       </div>
     </header>
 
     <main>
-      <div class="container">
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta
-          possimus doloribus modi numquam quaerat reprehenderit, necessitatibus
-          consectetur corrupti recusandae consequatur ut dolor odio itaque iusto
-          beatae? Quaerat minima sint laborum ex, est eos quidem, quisquam,
-          magnam sed quos voluptatum. Pariatur veritatis quam neque aliquid quis
-          quod est deserunt tempora assumenda veniam modi, voluptatem temporibus
-          ab repellendus excepturi. Dolore architecto, sit molestias animi et
-          pariatur dolorem voluptatum nam laudantium veniam consectetur ratione
-          quod suscipit inventore dicta illum cum non. Fugit nobis recusandae
-          rerum! Recusandae ab maiores eveniet at laborum delectus iure. Nisi
-          commodi quam iusto, omnis quasi corporis incidunt perferendis, vel
-          voluptatem, rem eligendi! Ea pariatur voluptas odio consectetur non
-          blanditiis nam iure voluptate veniam cupiditate modi molestias quas
-          temporibus quo facilis, consequatur natus officiis sit accusamus
-          exercitationem placeat itaque. Placeat, non sed consequuntur quia modi
-          inventore a nemo recusandae officia, maxime accusamus eligendi id
-          mollitia quibusdam cumque? Cupiditate nam iusto praesentium
-          exercitationem doloremque provident, quidem, dolor vero totam dolores
-          veritatis fugiat. Ipsam omnis sapiente, voluptates consectetur earum
-          dolorum est enim natus aliquid aliquam reprehenderit mollitia tempore,
-          eius sunt, velit laudantium fugiat! Eaque tenetur voluptatum ipsa
-          voluptas harum tempora corporis. Corrupti cumque delectus aperiam
-          beatae et sequi at, assumenda odit minima!
-        </p>
-        <p>
-          Asperiores nesciunt aliquid dicta? Eaque similique iste et velit
-          tenetur pariatur veniam praesentium optio ducimus? Dicta doloribus,
-          quas magnam consectetur distinctio placeat numquam eius maiores ab
-          consequuntur facere dignissimos laboriosam itaque qui animi.
-          Exercitationem possimus est iusto id ab quod dolorem harum, commodi
-          distinctio voluptas eaque beatae consequuntur enim voluptatem alias
-          repellat architecto aperiam eius ullam fugit dolorum magnam fuga
-          vitae. Vel obcaecati rem, similique id necessitatibus sed, eius animi
-          hic iure provident fuga tempore odit ullam accusantium ad nobis
-          explicabo illum officia debitis natus facere! Facere sed placeat nihil
-          delectus ipsa quaerat dicta repellendus distinctio rem! Tenetur,
-          aperiam ea. Nulla corrupti laborum doloremque numquam dignissimos non
-          quam, quas, repellendus dolores maiores molestias dicta magnam!
-          Repudiandae quibusdam ducimus possimus ipsa consequuntur expedita,
-          excepturi sint, fuga temporibus pariatur eveniet sed nihil facere
-          dolor velit porro. Quidem voluptatem accusamus itaque numquam atque,
-          assumenda iusto hic inventore, quo, maxime illo explicabo ullam
-          doloremque neque voluptates necessitatibus nisi? Illo, praesentium
-          hic! Necessitatibus perferendis alias sunt quia vero at distinctio
-          harum deserunt, modi dolores numquam omnis doloremque nostrum, illo
-          reiciendis nemo officiis perspiciatis explicabo nobis possimus,
-          nesciunt molestiae rem? Magnam deserunt suscipit, dicta, veritatis sed
-          nisi iusto eveniet saepe corporis adipisci voluptates autem quasi
-          praesentium.
-        </p>
-        <p>
-          Id veritatis, suscipit sit sunt at tempora delectus? Itaque rerum ea,
-          vitae ullam reprehenderit modi. Deserunt blanditiis fugit accusamus,
-          dolore architecto assumenda sint aspernatur aut, error corrupti
-          deleniti voluptatibus sapiente alias autem repudiandae molestias
-          repellendus? Provident ratione laborum ab pariatur itaque odio facere
-          eius. Porro facilis commodi quaerat quis velit, esse sequi cum modi?
-          Sapiente laborum assumenda dolorem voluptates deserunt magnam sit, vel
-          non doloribus perferendis, ipsum quis eveniet. Consequuntur sapiente
-          obcaecati incidunt suscipit veritatis, eum officiis cum enim vel
-          quaerat laudantium corrupti, modi dignissimos facere quo praesentium,
-          exercitationem quae est delectus? Rem ipsam deleniti atque modi cum,
-          velit, autem maxime ullam expedita non adipisci. Quisquam, excepturi
-          culpa, quo praesentium minima ipsa inventore molestias possimus
-          commodi fugit voluptatibus repellendus in vitae nihil provident
-          temporibus. Sed pariatur perspiciatis assumenda. Excepturi vitae
-          temporibus ab, voluptates sapiente dicta! Quod, cumque sed dolor quae
-          obcaecati fugit doloribus placeat dolorum nulla tenetur odit eum
-          minima impedit ullam nemo vitae sunt? Porro pariatur facere deserunt
-          aperiam obcaecati libero, doloremque velit corporis ex commodi nemo
-          ratione, iusto minima animi perspiciatis beatae nulla natus, eveniet
-          tenetur corrupti architecto tempore? Aperiam vel nulla officiis
-          dignissimos repellendus perspiciatis provident, pariatur eligendi
-          itaque, beatae modi delectus iure deleniti? Iste, iusto? Quae.
-        </p>
-        <p>
-          Sint exercitationem expedita ut sed labore! Possimus molestiae
-          blanditiis quasi recusandae, quaerat temporibus sit numquam ut,
-          quisquam repudiandae asperiores repellendus dolor veritatis aperiam,
-          debitis dolorem consequuntur error deserunt id. Atque praesentium,
-          totam sequi debitis voluptates fugit eum deleniti hic provident nisi
-          eos perferendis qui libero soluta vero nostrum unde, magni fuga.
-          Inventore qui dolorem temporibus vel quas. Quam mollitia obcaecati
-          temporibus nulla non ad eos distinctio, minus quod voluptate?
-          Laudantium, alias amet quia nesciunt doloribus reprehenderit, ex
-          facilis iure, blanditiis nemo assumenda. Autem voluptatum ut facere.
-          Non harum a aliquam cumque maiores dicta aspernatur, eos, quia esse
-          quam facilis, eaque praesentium omnis quaerat molestiae tenetur optio.
-          Modi aperiam tenetur eligendi repellat expedita, pariatur repudiandae,
-          neque quasi molestiae enim dolor earum omnis eius delectus eveniet
-          ipsam rem beatae porro consectetur? Soluta maxime debitis quaerat
-          nulla laudantium, harum eaque earum dolores, quia aut similique
-          dolorum. Ex debitis veniam nostrum fuga odio sequi aliquam
-          exercitationem praesentium beatae nisi explicabo voluptatibus quis,
-          hic iusto corporis quas dolor dolorem adipisci? Iste porro sit
-          exercitationem assumenda obcaecati fuga tempore voluptatem, tenetur
-          mollitia harum non eaque. Sint, sapiente voluptatibus ipsum, eum,
-          possimus aliquam omnis provident iste excepturi eaque accusamus minima
-          ullam est minus amet ducimus veniam ea!
-        </p>
-        <p>
-          Numquam vitae incidunt ab fugit esse dolor quidem quibusdam iusto
-          suscipit aliquid dolore nihil, rem labore quisquam molestias cumque
-          temporibus dolorem inventore veritatis optio error tempora similique
-          officiis. Quos officia numquam ab, impedit veritatis ut obcaecati
-          fugit natus ipsam vel repellendus ratione! Vel iusto a doloribus
-          tempora sapiente! Ducimus vero, maxime animi modi nostrum, obcaecati
-          quo error cupiditate eos veritatis odio, nulla dolores est molestiae
-          atque dicta ex dolore ab dolor iste nam beatae. Eos harum tenetur
-          doloribus impedit ea ad quia cum laudantium. Animi harum quia neque
-          deleniti. Excepturi, quia eligendi temporibus laudantium dicta eos
-          quas necessitatibus nihil velit consequuntur libero cupiditate
-          nesciunt, explicabo quae minus tempora eum! Repellendus accusantium
-          aut assumenda odio porro voluptatibus rerum vero nam. Maiores
-          voluptatem mollitia accusantium placeat, quod quisquam animi nobis
-          vero et ullam omnis similique corporis quasi quam unde repudiandae
-          quaerat eligendi suscipit adipisci cum pariatur nemo. Provident ea
-          iusto et adipisci voluptatibus ratione laboriosam saepe harum ut
-          molestias nemo aliquid maiores necessitatibus culpa numquam asperiores
-          dignissimos eos qui perspiciatis beatae possimus, excepturi ipsum
-          placeat. Facilis, harum. Ullam veritatis rem explicabo nesciunt ea
-          odit, dicta porro quam consequatur commodi, vel voluptas illo
-          perferendis autem maiores dolorum quo. Reprehenderit veritatis
-          recusandae nobis sunt.
-        </p>
-      </div>
-    </main>
+       <!-- hero section -->
+       <section class="hero-section section">
+        <div class="container">
+          <h1 class="webstudio-title">Effective Solutions for Your Business</h1>
+          <button class="order-service" data-modal-open type="button">
+            Order Service
+          </button>
+        </div>
+      </section>
+    
+      </main>
 
-    <div class="dropbox">
-      <div class="menu-container js-menu-container" id="mobile-menu">
-        <button class="menu-toggle js-close-menu">
-          <svg
-            fill="currentColor"
-            viewBox="0 0 20 20"        
-            width="8"
-            height="8"
-          >
+   <!-- modal window -->
+   <div class="backdrop is-hidden" data-modal>
+    <div class="modal">
+      <button data-modal-close class="modal-button" type="button">
+        <svg class="icon" width="8" height="8">
           <use href="./images/icons.svg#icon-close-black"></use>
-          <use href="./images/icons.svg#icon-Ellips"></use>
-          </svg>
-        </button>
-  
-        <ul class="mobile-menu">
-          <li>
-            <a class="nav-menu-studio link current" href="./index.html"
-              >Studio</a
-            >
-          </li>
-          <li>
-            <a class="nav-menu-studio link" href="./portfolio.html"
-              >Portfolio</a
-            >
-          </li>
-          <li><a class="nav-menu-studio link" href="">Contacts</a></li>
-        </ul>
-        <address class="address-menu">
-          <ul class="address-menu-list list">
-            <li>
-              <a
-                href="mailto:info@devstudio.com"
-                class="address-menu-list-item link"
-                >info@devstudio.com</a
-              >
-            </li>
-            <li>
-              <a href="tel:+110001111111" class="address-menu-list-item link"
-                >+11 (000) 111-11-11</a
-              >
-            </li>
-          </ul>
-        </address>
-        <ul class="social-links">
-          <li class="social-links-item">
-            <a
-              href="https://www.instagram.com/"
-              target="_blank"
-              class="social-links-btn link"
-            >
-              <svg class="icon" width="24" height="24">
-                <use href="./images/icons.svg#icon-instagram"></use>
+        </svg>
+      </button>
+      <p class="modal-title">Leave your contacts and we will call you back</p>
+      <!-- form -->
+      <form class="form" name="report-form" autocomplete="off">
+        <div class="modal-input-group">
+          <label for="user-name" class="modal-label">Name</label>
+          <div class="input-group-item">
+            <input
+              class="form-input"
+              type="text"
+              name="user-name"
+              id="user-name"
+            />
+            <svg width="18" height="24" class="icon">
+              <use href="./images/icons.svg#icon-person"></use>
+            </svg>
+          </div>
+        </div>
+        <div class="modal-input-group">
+          <label for="contact-tel" class="modal-label">Phone</label>
+          <div class="input-group-item">
+            <input
+              class="form-input"
+              type="tel"
+              name="contact-tel"
+              id="contact-tel"
+            />
+            <svg width="18" height="24" class="icon">
+              <use href="./images/icons.svg#icon-phone"></use>
+            </svg>
+          </div>
+        </div>
+        <div class="modal-input-group">
+          <label for="user-email" class="modal-label">Email</label>
+          <div class="input-group-item">
+            <input
+              class="form-input"
+              type="email"
+              name="user-email"
+              id="user-email"
+            />
+            <svg width="18" height="24" class="icon">
+              <use href="./images/icons.svg#icon-email"></use>
+            </svg>
+          </div>
+        </div>
+        <div class="modal-input-group-comment">
+          <label for="user-comment" class="modal-label">Comment</label>
+          <textarea
+            id="user-comment"
+            name="user-comment"
+            class="form-input-comment"
+            placeholder="Text input"
+          ></textarea>
+        </div>
+        <!-- checkbox -->
+        <div class="box-btn-text">
+          <input
+            type="checkbox"
+            class="checkbox-input visually-hidden"
+            id="user-privacy"
+            name="user-privacy"
+            value="true"
+          />
+          <label for="user-privacy" class="checkbox-text">
+            <span class="checkbox-box">
+              <svg width="10" height="8" class="checkbox-icon">
+                <use href="./images/icons.svg#icon-vector"></use>
               </svg>
-            </a>
-          </li>
-          <li class="social-links-item">
-            <a
-              href="https://www.twitter.com/"
-              target="_blank"
-              class="social-links-btn link"
-            >
-              <svg class="icon" width="24" height="24">
-                <use href="./images/icons.svg#icon-twitter"></use>
-              </svg>
-            </a>
-          </li>
-          <li class="social-links-item">
-            <a
-              href="https://www.facebook.com/"
-              target="_blank"
-              class="social-links-btn link"
-            >
-              <svg class="icon" width="24" height="24">
-                <use href="./images/icons.svg#icon-facebook"></use>
-              </svg>
-            </a>
-          </li>
-          <li class="social-links-item">
-            <a
-              href="https://www.linkedin.com/"
-              target="_blank"
-              class="social-links-btn link"
-            >
-              <svg class="icon" width="24" height="24">
-                <use href="./images/icons.svg#icon-linkedin"></use>
-              </svg>
-            </a>
-          </li>
-        </ul>
-      </div>
+            </span>
+            I accept the terms and conditions of the
+            <a href="" class="checkbox-link">Privacy Policy</a>
+          </label>
+        </div>
+        <button class="form-button" type="submit">Send</button>
+      </form>
     </div>
+  </div>
 
     <script
       defer
@@ -312,6 +279,7 @@
       integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
       crossorigin="anonymous"
     ></script>
-    <script defer src="js/mobile-menu.js"></script>
+    <script defer src="js/mobile-menu.js" type="module"></script>
+    <script src="./js/modal.js" type="module"></script>
   </body>
 </html>
