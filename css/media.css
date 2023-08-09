@@ -2,8 +2,11 @@
   .container {
     max-width: 768px;
   }
+	.nav-menu {
+		display: flex;
+		gap: 40px;
+	}
 	.hero-section {
-
 		background-image: linear-gradient(
       rgba(46, 47, 66, 0.7),
       rgba(46, 47, 66, 0.7)
@@ -35,6 +38,9 @@
 		.order-service {
 			margin-top: 36px;
 		}
+		.menu-toggle {
+			display: none;
+		}
 }
 
 @media screen and (min-width: 1158px) {
@@ -43,6 +49,26 @@
 		padding-left: 15px;
   	padding-right: 15px;
   }
+	.header-logo {
+		margin-right: 76px;	
+	}
+	.address-menu-list {		
+		flex-direction: row;
+	}
+	.navigation {
+		gap: 0;
+	}
+	.nav-menu {
+		margin-right: 332px;
+	}
+	.address-menu-list {
+		margin-left: auto;
+		margin-right: 0;
+	
+	}
+	.address-menu-list-item {
+		font-size: 16px;
+	}
 	.section-studio-second,
 .section-studio-third,
 .section-studio-fourth,
@@ -92,7 +118,17 @@
 			padding-left: 0;
 			padding-right: 0;
 		}
+		.footer-part-first {
+			margin-right: 120px;
 	
+		}
+}
+
+@media screen and (max-width: 767px) {
+	.nav-menu,
+	.address-menu {
+		display: none;
+	}
 }
 
 @media screen and (max-width: 1157px) {
@@ -105,8 +141,8 @@
 
 
 
-/* @media screen and (min-width: 768px) {
-	.hamburger-container .menu-toggle {
+@media screen and (min-width: 768px) {
+	.menu-toggle {
 			display: none;
 		}
 	}
@@ -121,43 +157,7 @@
 			display: none;
 		}
 	}
-	
-@media screen and (min-width: 428px) {
-	.page-header {
-			width: 100%;
-		}
-	}
-	@media screen and (min-width: 428px) {
-		.page-header {
-			width: 100%;
-		}
-	}
-	@media screen and (max-width: 767px) {
-		.header-contacts {
-			display: none;
-			align-items: center;
-		}
-	}
-	@media screen and (min-width: 768px) {
-		.header-contacts {
-			display: block;
-		}
-	}
-	@media screen and (min-width: 768px) and (max-width: 1157px) {
-		.header-contacts__item:not(:last-child) {
-			margin-bottom: 10px;
-		}
-	}
-	@media screen and (min-width: 1158px) {
-		.header-contacts {
-			display: flex;
-			align-items: center;
-			justify-content: center;
-		}
-		.header-contacts__item + .header-contacts__item {
-			margin-left: 40px;
-		}
-	} */
+
 	
 	@media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
 		.hero-section {
@@ -177,4 +177,3 @@
 			url(../images/hero-background/desktop-hero@2x.jpg);
 		}
 	}
-	
