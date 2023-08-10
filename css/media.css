@@ -2,6 +2,9 @@
   .container {
     max-width: 768px;
   }
+	.header .container {
+			padding: 0 15px;
+	}
 	.nav-menu {
 		display: flex;
 		gap: 40px;
@@ -16,6 +19,9 @@
 	.section-studio-list {
 	gap: 72px 24px;
 	}
+	.section-studio-second {
+    padding-bottom: 96px;
+	}
 	.section-studio-list-element {
 		display: flex;
 		flex-wrap: wrap;
@@ -24,7 +30,8 @@
 		.section-studio-list {
 			gap: 64px 24px;
 		}
-		.section-studio-fifth > .container {
+		.section-studio-fifth > .container,
+		.footer .container {
 			padding-left: 108px;
 			padding-right: 108px;
 		}
@@ -38,8 +45,44 @@
 		.order-service {
 			margin-top: 36px;
 		}
-		.menu-toggle {
+		.menu-toggle-open, 
+		.mobile-menu,
+		.menu-container {
 			display: none;
+		}
+		.input-email-box {
+			flex-direction: row;
+		}
+		/* .footer-second-box {
+			margin-right: 80px; */
+		
+		.footer-common-box {
+			flex-direction: row;
+			flex-wrap: wrap;
+			gap: 72px 24px;
+			justify-content:flex-start;
+			align-items:flex-start;
+		}
+		.footer-part-first {
+			margin: 0;
+		}
+		.footer-part-first .footer-logo {
+			margin: 0 0	16px 0;
+		}
+		.footer-box-text {
+			margin: 0 0	16px 0;
+		}
+		.email-title {
+			margin: 0 0	16px 0;
+		}
+		.input-email {
+			width: 264px;
+		}
+		.footer {
+			padding: 100px 0;
+		}
+		.footer .container {
+			padding: 0 15px;
 		}
 }
 
@@ -119,45 +162,41 @@
 			padding-right: 0;
 		}
 		.footer-part-first {
-			margin-right: 120px;
-	
+			margin-right: 120px;	
+		}
+		.input-email-box .input-email {
+			opacity: 1;
+		}
+		.footer-common-box {
+			gap: 0;
+		}
+		.footer-email-section {
+			margin-left: auto;
+		}
+		.footer-social-list {
+			margin-bottom: 0;
 		}
 }
+
+
 
 @media screen and (max-width: 767px) {
 	.nav-menu,
 	.address-menu {
 		display: none;
 	}
+	.header-nav,
+	.header-contacts-list {
+			display: none;
+		}
+		
 }
 
 @media screen and (max-width: 1157px) {
 	.section-studio-third {
 		display: none;
-	}
-	
+	}	
 }
-
-
-
-
-@media screen and (min-width: 768px) {
-	.menu-toggle {
-			display: none;
-		}
-	}
-	@media (max-width: 767px) {
-		.header-nav,
-		.header-contacts-list {
-			display: none;
-		}
-	}
-	@media (min-width: 768px) {
-		.menu-toggle {
-			display: none;
-		}
-	}
-
 	
 	@media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
 		.hero-section {

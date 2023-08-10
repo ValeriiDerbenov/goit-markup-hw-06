@@ -59,22 +59,16 @@
           </address>        
         </nav>
         <button
-          class="menu-toggle js-open-menu"
+          class="menu-toggle-open js-open-menu"
           aria-expanded="false"
           aria-controls="mobile-menu">
           <svg class="icon"
-            width="24"
-            height="24"
-            fill="currentColor"
-            viewBox="0 0 20 20"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-          <!-- <use href="./images/icons.svg#icon-hamburger"></use> -->
-            <path
-              fill-rule="evenodd"
-              d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
-              clip-rule="evenodd"
-            ></path>
+            width="32"
+            height="22">        
+            <use
+            class="icon-menu"
+            href="./images/icons.svg#icon-menu"
+          ></use> 
           </svg>
         </button>
 
@@ -471,7 +465,7 @@
 
       </main>
 <!-- FOOTER -->
-      <!-- <footer class="footer">
+      <footer class="footer">
         <div class="container footer-common-box">
           <div class="footer-part-first">
             <a href="./index.html" class="footer-logo link"
@@ -552,7 +546,7 @@
             </form>
           </div>
         </div>
-      </footer> -->
+      </footer>
      
    <!-- modal window -->
    <div class="backdrop is-hidden" data-modal>
@@ -641,7 +635,7 @@
   </div>
   <!-- MOBILE MENU -->
   <div class="menu-container js-menu-container" id="mobile-menu">
-    <button class="menu-toggle js-close-menu">
+    <button class="menu-toggle-close js-close-menu">
       <svg
        
         viewBox="0 0 20 20"
@@ -676,13 +670,13 @@
       </ul>
       <address class="mobile-address-menu">
         <ul class="address-menu-list list">
-          <li class="mobile-address-item">
+          <li class="mobile-address-menu">
             <a
               href="mailto:info@devstudio.com"
               class="address-menu-list-item link"
               >info@devstudio.com</a
             >
-          </li class="mobile-address-item">
+          </li class="mobile-address-menu">
           <li>
             <a href="tel:+110001111111" class="address-menu-list-item link"
               >+11 (000) 111-11-11</a
