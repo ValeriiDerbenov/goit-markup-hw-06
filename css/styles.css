@@ -62,7 +62,7 @@ address {
   padding-right: 16px;
   max-width: 428px;
   margin: 0 auto;
-  outline: 2px solid red;
+  /* outline: 2px solid red; */
 }
 
 .visually-hidden {
