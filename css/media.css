@@ -171,6 +171,9 @@
 		.footer-social-list {
 			margin-bottom: 0;
 		}
+		.address-menu-list {
+			gap: 40px;
+		}
 }
 
 
