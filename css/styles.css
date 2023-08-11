@@ -969,10 +969,15 @@ letter-spacing: 0.02em;
 .menu-container .mobile-menu-list-item:not(:last-child) {
 margin-bottom: 40px;;
 }
-.menu-container .nav-menu-studio-mobile:hover,
-.menu-container .nav-menu-studio-mobile:focus,
-.menu-container .nav-menu-studio-mobile:active {
+.active {
   color: var(--iris, #4D5AE5);
+}
+.mobile-address-menu .address-mobile-list-item {
+color: var(--iris, #4D5AE5);
+font-size: 36px;
+font-weight: 700;
+line-height: 1.11;
+letter-spacing: 0.02em;
 }
 .mobile-menu-list {
   margin-bottom: 50px;
@@ -984,9 +989,8 @@ font-weight: 500;
 line-height: 1.2;
 letter-spacing: 0.4px;
 }
-.mobile-address-menu .address-mobile-list-item:hover,
-.mobile-address-menu .address-mobile-list-item:focus,
-.mobile-address-menu .address-mobile-list-item:active {
+
+.mobile-address-menu .address-mobile-list-item-big {
 color: var(--iris, #4D5AE5);
 font-size: 36px;
 font-weight: 700;
