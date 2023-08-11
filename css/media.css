@@ -101,6 +101,13 @@
 		.portfolio-button-item {
 			font-size: 16px;
 		}
+		.portfolio-buttons-list {
+			margin-bottom: 64px;
+	}
+	.portfolio-main {
+    padding-top: 64px;
+    padding-bottom: 96px;
+}
 }
 
 @media screen and (min-width: 1158px) {
@@ -206,7 +213,13 @@
 		.portfolio-buttons-list {			
 			margin-bottom: 72px;
 		}
-		
+		.portfolio-buttons-list {
+			margin-bottom: 72px;
+}
+.portfolio-main {
+	padding-top: 96px;
+	padding-bottom: 120px;
+}
 }
 @media screen and (max-width: 427px) {
 	.mobile-social-links {
