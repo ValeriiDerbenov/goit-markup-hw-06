@@ -95,13 +95,15 @@ header {
 }
 .navigation {
   display: flex; 
-  align-items: center;
-  gap: 120px;
+  align-items: center; 
 }
 .nav-menu {
   display: flex;
   gap: 40px;
   display: none;
+}
+.address-menu {
+  margin-left: auto;
 }
 
 .address-menu-list {
@@ -118,6 +120,7 @@ header {
   text-transform: uppercase;
   line-height: 1.17;
   color: var(--primary-brand-color);
+  margin-right: 120px;
 }
 .header-logo-studio {
   color: var(--primary-black-color);
@@ -169,6 +172,13 @@ header {
 }
 .address-menu-list-item {
   font-size: 12px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: var(--body-text-color);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.address-mobile-list-item {
+  font-size: 20px;
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: var(--body-text-color);
@@ -575,7 +585,7 @@ justify-content:center;
   font-family: var(--primary-font);
   background-color: var(--cloud);
   color: var(--primary-brand-color);
-  font-size: 16px;
+  font-size: 14px;
   font-weight: 500;
   letter-spacing: 0.04em;
   line-height: 1.5;
@@ -626,7 +636,7 @@ justify-content:center;
 .portfolio-job-projects-name {
   display: flex;
   font-weight: 500;
-  font-size: 20px;
+  font-size: 16px;
   line-height: 1.2;
   letter-spacing: 0.02em;
   color: var(--primary-black-color);
@@ -634,7 +644,7 @@ justify-content:center;
 }
 .portfolio-job-projects-theme {
   display: flex;
-  font-size: 16px;
+  font-size: 12px;
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: var(--body-text-color);
@@ -674,7 +684,7 @@ justify-content:center;
   opacity: 0;
   pointer-events: none;
   transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .backdrop {
   width: 100%;
@@ -685,12 +695,13 @@ justify-content:center;
   background-color: rgba(46, 47, 66, 0.4);
 }
 .modal {
-  padding: 72px 24px 24px 24px;
+  padding: 72px 16px 24px 16px;
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%) scale(1);
-  width: 408px;
+  max-width: 408px;
+  min-width: 320px;
   min-height: 584px;
   border-radius: 4px;
   background: var(--dairy, #fcfcfc);
@@ -713,7 +724,7 @@ justify-content:center;
   width: 24px;
   height: 24px;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .modal-button:hover,
 .modal-button:focus {
@@ -730,7 +741,6 @@ justify-content:center;
 }
 .modal-title {
   margin-bottom: 16px;
-  width: 360px;
   color: var(--primary-black-color);
   text-align: center;
   font-size: 16px;
@@ -916,16 +926,13 @@ input[type="checkbox"]:checked + .checkbox-text .checkbox-box {
 .menu-container .menu-toggle-open {
   width: 32px;
   height: 22px;
-	/* z-index:2; */
-	overflow: hidden;
+	z-index:2;
+	/* overflow: hidden; */
 }
 .menu-toggle-open .icon-menu {
-  fill: var(--primary-black-color);
-  width: 100%;
+  stroke: var(--primary-black-color);
+
 }
-/* .menu-toggle-open.is-open .icon-menu {
-  display: none;
-} */
 .menu-container .menu-toggle-close {
   display: block;
   position: absolute;
@@ -937,29 +944,9 @@ input[type="checkbox"]:checked + .checkbox-text .checkbox-box {
   background-color: transparent;
   width: 24px;
   height: 24px;
-
 	z-index:2;
 	overflow: hidden;
 }
-/* .menu-toggle-open span {
-  display: block;
-  
-  width: 32px;
-	height: 1px; */
-	/* position: absolute; */
-	/* top: 50%;
-	left: 50%;
-	transform: translate(-50%, -50%);
-	background-color: #222222;
-	transition: all 0.5s;
-}
-.menu-toggle-open span:nth-of-type(2) {
-	top: calc(50% - 5px);
-}
-.menu-toggle-open span:nth-of-type(3) {
-	top: calc(50% + 5px);
-} */
-
 .mobile {
   display: flex;
   flex-direction: column;
@@ -973,7 +960,7 @@ input[type="checkbox"]:checked + .checkbox-text .checkbox-box {
 }
 .nav-menu-studio-mobile {
   color: var(--primary-black-color);
-font-size: 36px;
+  font-size: 36px;
 
 font-weight: 700;
 line-height: 1.11; /* 111.111% */
@@ -983,20 +970,23 @@ letter-spacing: 0.02em;
 margin-bottom: 40px;;
 }
 .menu-container .nav-menu-studio-mobile:hover,
-.menu-container .nav-menu-studio-mobile:focus {
+.menu-container .nav-menu-studio-mobile:focus,
+.menu-container .nav-menu-studio-mobile:active {
   color: var(--iris, #4D5AE5);
 }
 .mobile-menu-list {
   margin-bottom: 50px;
 }
-.mobile-address-item {
+.mobile-address-menu .address-mobile-list-item {
   color: var(--slate, #434455);
 font-size: 20px;
 font-weight: 500;
 line-height: 1.2;
 letter-spacing: 0.4px;
 }
-.mobile-address-menu .address-menu-list-item:focus {
+.mobile-address-menu .address-mobile-list-item:hover,
+.mobile-address-menu .address-mobile-list-item:focus,
+.mobile-address-menu .address-mobile-list-item:active {
 color: var(--iris, #4D5AE5);
 font-size: 36px;
 font-weight: 700;
