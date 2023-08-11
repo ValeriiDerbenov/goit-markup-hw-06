@@ -222,9 +222,6 @@
 }
 }
 @media screen and (max-width: 427px) {
-	.mobile-social-links {
-	gap: 32px;
-	}
 	.mobile-address-menu .address-mobile-list-item:focus {
 		font-size: 24px;
 	}
